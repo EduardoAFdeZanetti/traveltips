@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo"><b>Travel</b><i>Tips</i></a>
+        <div class="menu" id="menu-icon"></div>
+        <div>
+         <ul class="navbar">
+            <li><a href="index.html" class="home-active">Home</a></li>
+            <li><a href="index.html#videos">Videos</a></li>
+            <li><a href="index.html#places">Seasons</a></li>
+            <li><a href="index.html#about">Contact</a></li>
+            <li><a href="index.html#contact">Social</a></li>
+         </ul>
+         </div>
+         <div class="nav-icon">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+         </div>
+    </header>
+
+    <div class="form-container">
+        <h2>Contact Us</h2>
+        <form id="contactForm" onsubmit="submitForm(event)">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+            <button type="submit">Submit</button>
+        </form>
+        <p id="confirmation"></p>
+    </div>
+
+    <script src="main.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+    const navIcon = document.querySelector('.nav-icon');
+    const navbar = document.querySelector('.navbar');
+
+    navIcon.addEventListener('click', function() {
+        navbar.classList.toggle('navbar-open');
+    });
+});
+    </script>
+    
+    <div class="footer">2024 traveltips.com All rights Reserved</div>
+</body>
+</html>
+
+
+</body>
+</html>
